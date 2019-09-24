@@ -1,0 +1,183 @@
+html,
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+#root {
+  padding: 40px;
+}
+
+.count-down-container {
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 0px 6px 8px 3px rgba(128, 140, 156, 1);
+  -moz-box-shadow: 0px 6px 8px 3px rgba(128, 140, 156, 1);
+  box-shadow: 0px 6px 8px 3px rgba(128, 140, 156, 1);
+}
+
+.count-down-background {
+  padding: 40px;
+  border-radius: 10px;
+  background: #e7414c;
+  margin-bottom: 20px;
+
+  -webkit-box-shadow: 0px 6px 8px 3px rgba(128, 140, 156, 1);
+  -moz-box-shadow: 0px 6px 8px 3px rgba(128, 140, 156, 1);
+  box-shadow: 0px 6px 8px 3px rgba(128, 140, 156, 1);
+}
+
+.time-container-title {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.timer-divider-container {
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+.timer-divider {
+  background: white;
+  width: 10px;
+  height: 10px;
+}
+
+.timer-divider-container .timer-divider:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.timer-container {
+  padding: 5px;
+}
+
+.timer {
+  background: #dd2941;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 100px;
+}
+
+.count-down-controllers {
+  justify-content: center;
+}
+
+.count-down-controllers .controller {
+  border-radius: 100%;
+  border: 3px solid #e7414c;
+  width: 45px;
+  height: 45px;
+  outline: none;
+  background: white;
+  font-size: 15px;
+
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.count-down-controllers .controller:nth-child(1) {
+  margin-right: 15px;
+  color: white;
+  background: #e7414c;
+}
+
+.count-down-controllers .controller:nth-child(2) {
+  color: #e7414c;
+}
+
+.count-down-controllers .controller:hover {
+  transform: scale(1.1);
+}
+
+.count-down-controllers .controller:active {
+  transform: scale(1.2);
+}
+
+.time-inputs-container {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.time-inputs-container input {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 10px;
+}
+
+.time-inputs-container input[type="button"] {
+  background-color: #e7414c;
+  color: white;
+  border-color: #e7414c;
+  outline: 0;
+  cursor: pointer;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.time-inputs-container input[type="button"]:hover {
+  transform: scale(1.1);
+}
+
+.time-inputs-container input[type="button"]:active {
+  transform: scale(1.2);
+}
+
+.time-inputs-container .time-inpupt-group {
+  margin-left: 8px;
+}
+
+.time-inputs-container .time-inpupt-group:nth-child(1) {
+  margin-left: 0;
+}
+
+.time-inputs-container .time-inpupt-group .error {
+  color: #e7414c;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 850px;
+  width: 100%;
+  margin: auto;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #f9cccf;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.d-none {
+  display: none;
+}
